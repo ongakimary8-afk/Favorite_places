@@ -1,0 +1,119 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+/* Main content */
+main {
+    width: 85%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: darkgreen;
+}
+
+/* Form fields */
+input, textarea {
+    display: block;
+    width: 95%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 80px;
+}
+
+/* Buttons */
+button {
+    background-color: darkgreen;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #228b22;
+}
+
+/* Saved places */
+li {
+    list-style: none;
+    background-color: #e5f2e8;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.place-name {
+    color: darkgreen;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.place-name:hover {
+    text-decoration: underline;
+}
+
+/* Place details */
+#details {
+    background-color: #f4f8f4;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    main {
+        width: 92%;
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+}

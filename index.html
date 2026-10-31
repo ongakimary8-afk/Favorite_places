@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Places I've Been</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Places I've Been</h1>
+        <p>Keep track of all the beautiful places you have visited.</p>
+    </header>
+
+    <main>
+
+        <!-- Add a new destination -->
+        <section>
+            <h2>Add a New Place</h2>
+
+            <form id="placeForm">
+
+                <input type="text" id="name"
+                    placeholder="Place Name" required>
+
+                <input type="text" id="location"
+                    placeholder="Location / Country" required>
+
+                <input type="text" id="landmarks"
+                    placeholder="Famous Landmarks">
+
+                <input type="text" id="time"
+                    placeholder="Time of Year">
+
+                <textarea id="notes"
+                    placeholder="Personal Notes"></textarea>
+
+                <button type="submit">Add Place</button>
+
+            </form>
+        </section>
+
+        <!-- View saved places -->
+        <section>
+            <h2>My Saved Places</h2>
+
+            <button onclick="viewSavedPlaces()">
+                View Saved Places
+            </button>
+
+            <ul id="placesList"></ul>
+        </section>
+
+        <!-- Display selected place details -->
+        <section>
+            <h2>Place Details</h2>
+
+            <div id="details">
+                <p>Click on a place name to view its details.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Places I've Been &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
